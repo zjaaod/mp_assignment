@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_above="@id/idInput"
+        android:layout_centerHorizontal="true"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/android"/>
+
+    <EditText
+        android:id="@+id/idInput"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_above="@id/pwInput"
+        android:hint="ID"/>
+
+    <EditText
+        android:id="@+id/pwInput"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:hint="PW"/>
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:text="로그인"
+    android:id="@+id/btnSignIn"
+    android:background="#20b2aa"
+    android:textColor="#fff"
+    android:layout_below="@id/pwInput"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="회원가입"
+        android:id="@+id/btnSignUp"
+        android:background="#20b2aa"
+        android:textColor="#fff"
+        android:layout_below="@id/btnSignIn"/>
+
+</RelativeLayout>
